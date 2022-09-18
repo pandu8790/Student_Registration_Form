@@ -31,7 +31,7 @@ public class StuFrame implements ActionListener{
             new Login();
         }
         else if(e.getActionCommand()==b3.getActionCommand()){
-            
+            new Search();
         }
     }
     public static void main(String args[]){
