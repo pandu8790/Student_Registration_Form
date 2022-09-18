@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import javax.swing.JFrame;
 // import javax.swing.event.*;
-public class StuFrame implements ActionListener{
+public class MainStu implements ActionListener{
     JButton b1,b2,b3;
     StuFrame(){
         
