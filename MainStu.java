@@ -35,6 +35,6 @@ public class MainStu implements ActionListener{
         }
     }
     public static void main(String args[]){
-        new StuFrame();
+        new MainStu();
     }
 }
