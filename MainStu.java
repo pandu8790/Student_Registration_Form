@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 // import javax.swing.event.*;
 public class MainStu implements ActionListener{
     JButton b1,b2,b3;
-    StuFrame(){
+    MainStu(){
         
         JFrame f = new JFrame();
         b1 = new JButton("Registration");
