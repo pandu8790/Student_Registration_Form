@@ -7,10 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.io.FileWriter;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
-import java.util.Scanner;
 public class Search implements ActionListener{
     static JFrame f = new JFrame();
     JLabel l1,l2;
