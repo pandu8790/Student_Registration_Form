@@ -1,37 +1,45 @@
-package Student;
 import javax.swing.*;
 import java.awt.event.*;
 import javax.swing.JFrame;
-public class MainStu implements ActionListener{
-    JButton b1,b2,b3;
-    MainStu(){
-        JFrame f = new JFrame();
-        b1 = new JButton("Registration");
-        b1.setBounds(50,50,150,20);
-        b2 = new JButton("login");
-        b2.setBounds(50,100,150,20);
-        b3 = new JButton("Search");
-        b3.setBounds(50,150,150,20);
-        f.add(b1);f.add(b2);f.add(b3);
-        f.setSize(450,450);
-        f.setLayout(null);
-        f.setVisible(true);
-        b1.addActionListener(this);
-        b2.addActionListener(this);
-        b3.addActionListener(this);
+public class MainStu implements ActionListener{  
+JFrame f;  
+JTextArea ta;
+JButton jb,jb1,jb2;
+MainStu(){  
+    f=new JFrame();  
+    JPanel p1=new JPanel();   
+    JPanel p2=new JPanel();  
+    JPanel p3=new JPanel();  
+    JTabbedPane tp=new JTabbedPane();  
+    tp.setBounds(50,50,300,300);  
+    tp.add("Registration",p1);
+    tp.add("Login",p2);  
+    tp.add("Search",p3); 
+    jb = new JButton("Register");
+    jb.addActionListener(this);
+    p1.add(jb);
+    jb1 = new JButton("Login");
+    jb1.addActionListener(this);
+    p2.add(jb1);
+    jb2 = new JButton("Search");
+    jb2.addActionListener(this);
+    p3.add(jb2);
+    f.add(tp);  
+    f.setSize(400,400);  
+    f.setLayout(null);  
+    f.setVisible(true);  
+}
+public void actionPerformed(ActionEvent e){
+    if(e.getActionCommand()==jb.getActionCommand()){
+        new Registration();
     }
-    public void actionPerformed(ActionEvent e){
-        if(e.getActionCommand()==b1.getActionCommand()){
-            new Registration();
-        }
-        else if(e.getActionCommand()==b2.getActionCommand()){
-            new Login();
-        }
-        else if(e.getActionCommand()==b3.getActionCommand()){
-            new Search();
-        }
+    if(e.getActionCommand()==jb1.getActionCommand()){
+        new Login();
     }
-    public static void main(String args[]){
-        new MainStu();
+    if(e.getActionCommand()==jb2.getActionCommand()){
+        new Search();
     }
 }
+public static void main(String[] args) {  
+    new MainStu();  
+}}  
