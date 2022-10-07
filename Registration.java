@@ -1,4 +1,3 @@
-package Student;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.*;
