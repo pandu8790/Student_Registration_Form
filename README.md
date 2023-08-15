@@ -34,3 +34,5 @@ Login: Use your registration number as the username and your address's last word
 
 Search: Enter your registration number to retrieve your registration details.
 
+🔗 Connect with Me: If you're as passionate about web development as I am, let's connect! Feel free to reach out for discussions, collaborations, or simply to share your thoughts on this project. Email:pandulingagiri1@gmail.com
+
